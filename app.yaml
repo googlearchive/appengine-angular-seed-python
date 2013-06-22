@@ -1,0 +1,32 @@
+application: your-app-id
+version: 1
+runtime: python27
+threadsafe: true
+api_version: 1
+
+default_expiration: "10m"
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: (.*)/
+  static_files: angular-seed/app\1/index.html
+  upload: angular-seed/app/index\.html
+  mime_type: text/html; charset=utf-8
+
+- url: (/.*\.css)
+  static_files: angular-seed/app\1
+  upload: angular-seed/app/.*\.css
+  mime_type: text/css; charset=utf-8
+
+- url: (/.*\.html)
+  static_files: angular-seed/app\1
+  upload: angular-seed/app/.*\.html
+  mime_type: text/html; charset=utf-8
+
+- url: (/.*\.js)
+  static_files: angular-seed/app\1
+  upload: angular-seed/app/.*\.js
+  mime_type: text/javascript; charset=utf-8

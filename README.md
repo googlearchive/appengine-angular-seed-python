@@ -1,3 +1,9 @@
+![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
+
+This project is no longer actively developed or maintained.  
+
+For more information about App Engine, refer to our [documentation](https://cloud.google.com/appengine).
+
 ## App Engine angular-seed Python
 
 Trivial Python App Engine app based on [angular-seed](https://github.com/angular/angular-seed)
